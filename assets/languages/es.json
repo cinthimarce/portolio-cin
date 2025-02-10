@@ -1,0 +1,69 @@
+{
+    "menu":{
+        "home": "Inicio",
+        "project": "Proyectos",
+        "contact": "Contacto"
+    },
+    "icon": {
+        "home": "bx bx-home-alt",
+        "project": "bx bx-book-open",
+        "contact": "bx bx-envelope",
+        "download": "bx bx-down-arrow-alt",
+        "heart": "bx bxs-heart"
+    },
+    "welcome":{
+        "hi": "Hola, Bienvenidos!",
+        "name": "Soy Cinthia"
+    },
+    "profile":{
+        "rol": "Diseñadora Gráfica",
+        "description": "Tengo experiencia creando contenido visual tanto en formato impreso como digital y me apasiona el Diseño Web, uso tecnologías como HTML5, CSS3 y Tailwind.",
+        "download": "Descargar CV"
+    },
+    "portfolio":{
+        "first-title": "Portafolio",
+        "first-description": "Mis trabajos"
+    },
+    "experience":{
+        "first-job-title": "Empresa Cristalino",
+        "filter-all": "Todo",
+        "filter-insurance": "Seguros",
+        "filter-youth": "Jóvenes",
+        "second-job-title": "Homecenter Sodimac",
+        "head-title": "Cabecera Iluminación",
+        "head-description":"Cabecera Pasillo Central Dpto Iluminación, Estilo Nórdico",
+        "head-title-2": "Cabecera Iluminación",
+        "head-description-2":"Cabecera Pasillo Central Dpto Iluminación, Estilo Industrial",
+        "head-title-3": "Exhibición Textil",
+        "head-description-3":"Colección Textil Primavera",
+        "head-title-4": "Exhibición Textil",
+        "head-description-4":"Textil Sábanas Primavera",
+        "head-title-5": "Exhibición Textil",
+        "head-description-5":"Colección Textil Primavera Infantil",
+        "third-job-title": "Freelance Work",
+        "third-job-description":"Logotipos",
+        "fourth-job-title": "Acciona",
+        "fourth-job-date":"2018 - 2020",
+        "last-job-title": "TEDOS",
+        "last-job-description":"2014 - 2016"
+    },
+    "diploma":{
+        "diploma-title": "Diplomado Diseño Interiores UAB",
+        "diploma-description": "Proyecto Espacios Laborales - Año 2021"
+    },
+    "freelance":{
+        "vue-title": "Website Vue + Tailwind",
+        "vue-description": "Enmarcaciones Humberto Vera - Año 2024",
+        "book-title": "Ilustración & Diagramación",
+        "book-description": "Libro “Los cuentos están locos” - Año 2018"
+    },
+    "skill":{
+        "graphic-design": "Diseño Gráfico",
+        "web-design": "Diseño Web"
+    },
+    "footer":{
+        "graphic-design": "Diseñadora Gráfica & Web",
+        "made": "Hecho con",
+        "by": "por Cinthia"
+    }
+}

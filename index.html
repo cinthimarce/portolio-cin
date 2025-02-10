@@ -14,23 +14,70 @@
 </head>
 <body>
     <header>
-        <div class="logo" id="logo">
+        <!-- <div class="logo" id="logo">
             <a href="#" class="logo">Cinthia
                 <span>Muñoz</span>
             </a>
+        </div> -->
+        <div id="logo">
+            <a href="#" class="">
+                <img loading="lazy" class="logo-img" src="./assets/img/Cm.webp" alt="logo">
+            </a>
         </div>
         <ul class="navbar">
-            <li><a href="#"><i class="bx bx-home-alt"></i>Inicio</a></li>
-            <li><a href="#portafolio"><i class="bx bx-book-open"></i>Proyectos</a></li>
+            <li>
+                <a href="#">
+                    <i class="" data-section="icon" data-value="home"></i>
+                    <span data-section="menu" data-value="home">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#portafolio">
+                    <i class="" data-section="icon" data-value="project"></i>
+                    <span data-section="menu" data-value="project">Proyectos</span>
+                </a>
+            </li>
             <!-- <li><a href="#"><i class="bx bx-info-circle"></i>Sobre Mí</a></li> -->
-            <li><a href="#footer"><i class="bx bx-envelope"></i>Contacto</a></li>
+            <li>
+                <a href="#footer">
+                    <i class="" data-section="icon" data-value="contact"></i>
+                    <span data-section="menu" data-value="contact">Contacto</span>
+                </a>
+            </li>
         </ul>
         <div class="h-right">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-behance behance"></i></a>
+            <a href="https://github.com/cinthimarce" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/ci-munoz-j/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.behance.net/CinthiaM" target="_blank"><i class="bx bxl-behance behance"></i></a>
+            <!-- <i class='bx bx-world language flags' id="flags" data-language="es"></i> -->
+            <!--<span class="es">Español</span>
+            <input class="check" type="checkbox">
+            <span class="en">Inglés</span> -->
             <i class="bx bx-menu" id="menu-icon"></i>
         </div>
+        <!-- Language -->
+        <div class="f-container" id="f-container">
+            <div class="flags">
+                <div class="flags__item" data-language="es">
+                    <img loading="lazy" class="f-img" src="./assets/img/es.svg" alt="Español">
+                </div>
+            </div>
+            <div class="flags">
+                <div class="flags__item" data-language="en">
+                    <img loading="lazy" class="f-img" src="./assets/img/en.svg" alt="English">
+                </div>
+            </div>   
+        </div>
+        <!-- <div id="flags" class="flags">
+            <div class="flags__item" data-language="es">
+                <img src="./assets/img/es.svg" alt="">
+            </div>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="en">
+                <img src="./assets/img/en.svg" alt="">
+            </div>
+        </div> -->
     </header>
     <main class="main">
         <section class="home section" id="bg-leave">
@@ -41,29 +88,33 @@
                         </div>
                     </div>
                     <div class="home__data" id="mt">
-                        <p class="home__bienvenido"> Hola, Bienvenidos!</p>
-                        <h1 class="home__title">
+                        <p class="home__bienvenido" data-section="welcome" data-value="hi"> Hola, Bienvenidos!</p>
+                        <h1 class="home__title" data-section="welcome" data-value="name">
                             Soy Cinthia
                         </h1>
-                        <h3 class="home__subtitle">Diseñadora Gráfica</h3>
-                        <p class="home__description">Tengo experiencia en Retail como Visual Merchandising y me apasiona el Diseño Web, uso tecnologías como HTML5, CSS3 y Tailwind.</p>
-                        <a download="" href="./assets/pdf/cv-cinthiamunoz.pdf" class="button button--flex">
-                            Descargar CV
-                            <i class="bx bx-down-arrow-alt button__icon"></i>
+                        <h3 class="home__subtitle" data-section="profile" data-value="rol">Diseñadora Gráfica</h3>
+                        <p class="home__description" data-section="profile" data-value="description">Tengo experiencia creando contenido visual tanto en formato impreso como digital y me apasiona el Diseño Web, uso tecnologías como HTML5, CSS3 y Tailwind.</p>
+                    </div>
+                    <div class="b-container" id="bt-mobile">
+                        <a  id="cvDownload" download="" class="button">
+                            <span data-section="profile" data-value="download" id="downloadText">Descargar CV</span>
+                            <div class="button__icon">
+                                <i data-section="icon" data-value="download"></i>
+                            </div>
                         </a>
                     </div>
                     <!-- start scroll btn -->
-                    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt'></i></button>
+                    <button onclick="topFunction()" class="m-button" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt'></i></button>
                     <!-- end scroll btn -->
                 </div>
             </div>
         </section>
         <!-- Section Portafolio -->
         <section class="portafolio section" id="portafolio">
-            <h2 class="section__title" id="mt-porta">
+            <h2 class="section__title" id="mt-porta" data-section="portfolio" data-value="first-title">
                 Portafolio
             </h2>
-            <span class="section__subtitle" id="mb">
+            <span class="section__subtitle" id="mb" data-section="portfolio" data-value="first-description">
                 Mis trabajos
             </span>
             <div class="line">
@@ -71,62 +122,62 @@
         </section> 
         <!-- Filter Portafolio Cristalino-->   
         <span >
-            <a class="cristalino_link" href="https://www.cristalino.cl/cl/index.php" target=_blank><p class="cristalino" id="p-cristalino">Empresa Cristalino</p></a>
+            <a class="cristalino_link" href="https://www.cristalino.cl/cl/index.php" target=_blank><p class="cristalino" id="p-cristalino" data-section="experience" data-value="first-job-title">Empresa Cristalino</p></a>
             <p class="cristalino_year">2024</p>
         </span>
         <section>  
             <div class="container-filter">
                 <ul class="filter-menu">
-                    <li data-target="us">Todo</li>
+                    <li data-target="us" data-section="experience" data-value="filter-all">Todo</li>
                     <li data-target="jjo">JJO</li>
                     <li data-target="comic">Comic</li>
                     <li data-target="quiz">Quiz</li>
-                    <li data-target="insurance">Seguros</li>
-                    <li data-target="youth">Jovenes</li>
+                    <li data-target="insurance" data-section="experience" data-value="filter-insurance">Seguros</li>
+                    <li data-target="youth" data-section="experience" data-value="filter-youth">Jovenes</li>
                     
                 </ul>
                 <ul class="filter-item">
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/05092024/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Datos curiosos JJOO 150824/2.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Post+tips Cardif/Prevención de incendios 1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Despidos por necesidad de la empresa/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Dia de la Felicidad  (3)/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Los 5 siniestros 270824/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/JJ.00 2024/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Los sismos y la protección en el hogar 03092024/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/luna/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Fiestas patrias/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Personaje histórico Bastillas (2)/Prevención de incendios 1.jpg" alt=""></li>            
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Desempleo Mujeres 230824/2.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Quiz JJ.00 2024/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Youth Day 120824 (1)/1.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/Los sismos y la protección en el hogar 03092024/2.jpg" alt=""></li>
-                    <li data-item="us" class="active"><img src="./assets/img/Cristalino/JJOO/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/05092024/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Datos curiosos JJOO 150824/2.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Post+tips Cardif/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Despidos por necesidad de la empresa/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Dia de la Felicidad  (3)/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Los 5 siniestros 270824/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/JJ.00 2024/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Post+tips Cardif/2.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/luna/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Bastillas/1.jpg" alt=""></li>            
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Fiestas patrias/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Desempleo Mujeres 230824/2.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Quiz JJ.00 2024/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Youth Day 120824 (1)/1.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/Post+tips Cardif/3.jpg" alt=""></li>
+                    <li data-item="us" class="active"><img loading="lazy" src="./assets/img/Cristalino/JJOO/1.jpg" alt=""></li>
                     
-                    <li data-item="jjo" class="delete"><img src="./assets/img/Cristalino/Datos curiosos JJOO 150824/1.jpg" alt=""></li>
-                    <li data-item="jjo" class="delete"><img src="./assets/img/Cristalino/Datos curiosos JJOO 150824/2.jpg" alt=""></li>            
-                    <li data-item="jjo" class="delete"><img src="./assets/img/Cristalino/Datos curiosos JJOO 150824/3.jpg" alt=""></li>
-                    <li data-item="jjo" class="delete"><img src="./assets/img/Cristalino/Datos curiosos JJOO 150824/4.jpg" alt=""></li>
+                    <li data-item="jjo" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Datos curiosos JJOO 150824/1.jpg" alt=""></li>
+                    <li data-item="jjo" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Datos curiosos JJOO 150824/2.jpg" alt=""></li>            
+                    <li data-item="jjo" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Datos curiosos JJOO 150824/3.jpg" alt=""></li>
+                    <li data-item="jjo" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Datos curiosos JJOO 150824/4.jpg" alt=""></li>
                     
-                    <li data-item="comic" class="delete"><img src="./assets/img/Cristalino/luna (1)/1.jpg" alt=""></li>
-                    <li data-item="comic" class="delete"><img src="./assets/img/Cristalino/luna (1)/2.jpg" alt=""></li>            
-                    <li data-item="comic" class="delete"><img src="./assets/img/Cristalino/luna (1)/3.jpg" alt=""></li>
-                    <li data-item="comic" class="delete"><img src="./assets/img/Cristalino/luna (1)/4.jpg" alt=""></li>
+                    <li data-item="comic" class="delete"><img loading="lazy" src="./assets/img/Cristalino/luna (1)/1.jpg" alt=""></li>
+                    <li data-item="comic" class="delete"><img loading="lazy" src="./assets/img/Cristalino/luna (1)/2.jpg" alt=""></li>            
+                    <li data-item="comic" class="delete"><img loading="lazy" src="./assets/img/Cristalino/luna (1)/3.jpg" alt=""></li>
+                    <li data-item="comic" class="delete"><img loading="lazy" src="./assets/img/Cristalino/luna (1)/4.jpg" alt=""></li>
 
-                    <li data-item="quiz" class="delete"><img src="./assets/img/Cristalino/Quiz JJ.00 2024/1.jpg" alt=""></li>
-                    <li data-item="quiz" class="delete"><img src="./assets/img/Cristalino/Quiz JJ.00 2024/2.jpg" alt=""></li>            
-                    <li data-item="quiz" class="delete"><img src="./assets/img/Cristalino/Quiz JJ.00 2024/3.jpg" alt=""></li>
-                    <li data-item="quiz" class="delete"><img src="./assets/img/Cristalino/Quiz JJ.00 2024/4.jpg" alt=""></li>
+                    <li data-item="quiz" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Quiz JJ.00 2024/1.jpg" alt=""></li>
+                    <li data-item="quiz" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Quiz JJ.00 2024/2.jpg" alt=""></li>            
+                    <li data-item="quiz" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Quiz JJ.00 2024/3.jpg" alt=""></li>
+                    <li data-item="quiz" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Quiz JJ.00 2024/4.jpg" alt=""></li>
 
-                    <li data-item="insurance" class="delete"><img src="./assets/img/Cristalino/Los 5 siniestros 270824/1.jpg" alt=""></li>
-                    <li data-item="insurance" class="delete"><img src="./assets/img/Cristalino/Los 5 siniestros 270824/2.jpg" alt=""></li>            
-                    <li data-item="insurance" class="delete"><img src="./assets/img/Cristalino/Los 5 siniestros 270824/3.jpg" alt=""></li>
-                    <li data-item="insurance" class="delete"><img src="./assets/img/Cristalino/Los 5 siniestros 270824/4.jpg" alt=""></li>
+                    <li data-item="insurance" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Los 5 siniestros 270824/1.jpg" alt=""></li>
+                    <li data-item="insurance" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Los 5 siniestros 270824/2.jpg" alt=""></li>            
+                    <li data-item="insurance" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Los 5 siniestros 270824/3.jpg" alt=""></li>
+                    <li data-item="insurance" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Los 5 siniestros 270824/4.jpg" alt=""></li>
 
-                    <li data-item="youth" class="delete"><img src="./assets/img/Cristalino/Youth Day 120824 (1)/1.jpg" alt=""></li>
-                    <li data-item="youth" class="delete"><img src="./assets/img/Cristalino/Youth Day 120824 (1)/2.jpg" alt=""></li>            
-                    <li data-item="youth" class="delete"><img src="./assets/img/Cristalino/Youth Day 120824 (1)/3.jpg" alt=""></li>
-                    <li data-item="youth" class="delete"><img src="./assets/img/Cristalino/Youth Day 120824 (1)/4.jpg" alt=""></li>
+                    <li data-item="youth" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Youth Day 120824 (1)/1.jpg" alt=""></li>
+                    <li data-item="youth" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Youth Day 120824 (1)/2.jpg" alt=""></li>            
+                    <li data-item="youth" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Youth Day 120824 (1)/3.jpg" alt=""></li>
+                    <li data-item="youth" class="delete"><img loading="lazy" src="./assets/img/Cristalino/Youth Day 120824 (1)/4.jpg" alt=""></li>
                 </ul>
             </div>
         </section>
@@ -134,7 +185,7 @@
         <section class="portafolio section-2">
             <div class="wrapper" >       
                 <span>
-                <a class="cristalino"><p class="cristalino" id="p-vue">Homecenter Sodimac</p></a>
+                <a class="cristalino"><p class="cristalino" id="p-vue" data-section="experience" data-value="second-job-title">Homecenter Sodimac</p></a>
                 <p class="cristalino_year" id="p-enmarca">2021 - 2024</p>
                 </span>                                        
                 <div class="card-container" id="wrapp">
@@ -144,8 +195,8 @@
                         <div class="row" id="n-descrip">
                             <div class="number">1</div>
                             <div class="description" >
-                                <h4 class="bg-title-card">Cabecera Iluminación</h4>
-                                <p>Cabecera Pasillo Central Dpto Iluminación, Estilo Nórdico</p>
+                                <h4 class="bg-title-card" data-section="experience" data-value="head-title">Cabecera Iluminación</h4>
+                                <p data-section="experience" data-value="head-description">Cabecera Pasillo Central Dpto Iluminación, Estilo Nórdico</p>
                             </div>
                         </div>
                     </label>
@@ -155,8 +206,8 @@
                         <div class="row" id="n-descrip">
                             <div class="number">2</div>
                             <div class="description">
-                                <h4 class="bg-title-card">Cabecera iluminación</h4>
-                                <p>Cabecera Pasillo Central Dpto Iluminación, Estilo Industrial</p>
+                                <h4 class="bg-title-card" data-section="experience" data-value="head-title-2">Cabecera iluminación</h4>
+                                <p data-section="experience" data-value="head-description-2">Cabecera Pasillo Central Dpto Iluminación, Estilo Industrial</p>
                             </div>
                         </div>
                     </label>
@@ -166,8 +217,8 @@
                         <div class="row" id="n-descrip">
                             <div class="number">3</div>
                             <div class="description">
-                                <h4 class="bg-title-card">Exhibición Textil</h4>
-                                <p>Colección Textil Primavera</p>
+                                <h4 class="bg-title-card" data-section="experience" data-value="head-title-3">Exhibición Textil</h4>
+                                <p data-section="experience" data-value="head-description-3">Colección Textil Primavera</p>
                             </div>
                         </div>
                     </label>
@@ -177,8 +228,8 @@
                         <div class="row" id="n-descrip">
                             <div class="number">4</div>
                             <div class="description">
-                                <h4 class="bg-title-card">Exhibición Textil</h4>
-                                <p>Textil Sábanas Primavera</p>
+                                <h4 class="bg-title-card" data-section="experience" data-value="head-title-4">Exhibición Textil</h4>
+                                <p data-section="experience" data-value="head-description-4">Textil Sábanas Primavera</p>
                             </div>
                         </div>
                     </label>
@@ -188,8 +239,8 @@
                         <div class="row" id="n-descrip">
                             <div class="number">5</div>
                             <div class="description">
-                                <h4 class="bg-title-card">Exhibición Textil</h4>
-                                <p>Colección Textil Primavera Infantil</p>
+                                <h4 class="bg-title-card" data-section="experience" data-value="head-title-5">Exhibición Textil</h4>
+                                <p data-section="experience" data-value="head-description-5">Colección Textil Primavera Infantil</p>
                             </div>
                         </div>
                     </label>
@@ -198,127 +249,153 @@
         </section>    
         <!--Card section Freelance-->
         <article class="images-project" id="mt-free">
-            <span class="section__subtitle">Freelance
-                <p class="cristalino_year">Logotipos</p>
-            </span>
+            <div class="experience-item">
+                <span class="section__subtitle" data-section="experience" data-value="third-job-title">Freelance</span>
+                <p class="cristalino_year" data-section="experience" data-value="third-job-description">Logotipos</p>
+            </div>
+            <!-- <span class="section__subtitle" data-section="experience" data-value="third-job-title">Freelance
+                <p class="cristalino_year" data-section="experience" data-value="third-job-description">Logotipos</p>
+            </span> -->
             <div class="images-content-2" id="gallery-logos-2">
-                <img src="./assets/img/Logos/AnimalMarket.png" alt="">
-                <img src="./assets/img/Logos/LOGO_ALCO.png" alt="">
-                <img src="./assets/img/Logos/Ekun/ekun-1.png" alt="">
-                <img src="./assets/img/Logos/acciona.png" alt="">
-                <img src="./assets/img/Logos/voki.png" alt="">
-                <img src="./assets/img/Logos/voki-clothe.PNG" alt="">
+                <img loading="lazy" src="./assets/img/Logos/AnimalMarket.png" alt="">
+                <img loading="lazy" src="./assets/img/Logos/LOGO_ALCO.png" alt="">
+                <img loading="lazy" src="./assets/img/Logos/Ekun/ekun-1.png" alt="">
+                <img loading="lazy" src="./assets/img/Logos/acciona.png" alt="">
+                <img loading="lazy" src="./assets/img/Logos/voki.png" alt="">
+                <img loading="lazy" src="./assets/img/Logos/voki-clothe.PNG" alt="">
             </div>
             <!--Video-->
-            <span class="title-sur pad" id="p-vue">Website Vue + Tailwind
-                <a class="cristalino_link" href="https://galeria-sur-ilustra.web.app/" target=_blank><p class="sub-sur" id="p-enmarca">Enmarcaciones Humberto Vera - Año 2024</p></a>
-            </span>
+            <div class="experience-item">
+                <span class="title-sur pad" id="p-vue" data-section="freelance" data-value="vue-title">Website Vue + Tailwind</span>
+                <a class="cristalino_link" href="https://galeria-sur-ilustra.web.app/" target=_blank>
+                    <p class="sub-sur" id="p-enmarca" data-section="freelance" data-value="vue-description">Enmarcaciones Humberto Vera - Año 2024</p>
+                </a>
+            </div>
+            <!-- <span class="title-sur pad" id="p-vue" data-section="freelance" data-value="vue-title">Website Vue + Tailwind
+                <a class="cristalino_link" href="https://galeria-sur-ilustra.web.app/" target=_blank><p class="sub-sur" id="p-enmarca" data-section="freelance" data-value="vue-description">Enmarcaciones Humberto Vera - Año 2024</p></a>
+            </span> -->
             <div class="cont-video" id="panelpic1">
                 <a href="https://galeria-sur-ilustra.web.app/"style="display:block"target="_blank">
                 <video class="notebook" autoplay loop preload="auto" id="note">
-                    <source src="./assets/img/surilustra/sur-video.mp4" type="video/mp4">
+                    <source loading="lazy" src="./assets/img/surilustra/sur-video.mp4" type="video/mp4">
                 </video>
                 </a>
             </div>
             <!--3D-->
-            <span class="title-sur" id="p-vue">Diplomado Diseño Interiores UAB
-                <p class="sub-sur" id="p-enmarca"> Proyecto Espacios Laborales - Año 2021</p>
-            </span>
+            <div class="experience-item">
+                <span class="title-sur" id="p-vue" data-section="diploma" data-value="diploma-title">Diplomado Diseño Interiores UAB</span>
+                <p class="sub-sur" id="p-enmarca" data-section="diploma" data-value="diploma-description"> Proyecto Espacios Laborales - Año 2021</p>
+            </div>
+<!--             <span class="title-sur" id="p-vue" data-section="diploma" data-value="diploma-title">Diplomado Diseño Interiores UAB
+                <p class="sub-sur" id="p-enmarca" data-section="diploma" data-value="diploma-description"> Proyecto Espacios Laborales - Año 2021</p>
+            </span> -->
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Diplomado Interior Design/9.png" alt="">
-                <img src="./assets/img/Diplomado Interior Design/3.JPG" alt="">
-                <img src="./assets/img/Diplomado Interior Design/4.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/9.png" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/3.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/4.JPG" alt="">
             </div>
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Diplomado Interior Design/6.JPG" alt="">
-                <img src="./assets/img/Diplomado Interior Design/7.JPG" alt="">
-                <img src="./assets/img/Diplomado Interior Design/3D-1.png" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/6.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/7.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/3D-1.png" alt="">
             </div>
             <div class="images-content-2" id="gallery-logos">
 
-                <img src="./assets/img/Diplomado Interior Design/3D-2.png" alt="">
-                <img src="./assets/img/Diplomado Interior Design/3D-3.png" alt="">
-                <img src="./assets/img/Diplomado Interior Design/10.png" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/3D-2.png" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/3D-3.png" alt="">
+                <img loading="lazy" src="./assets/img/Diplomado Interior Design/10.png" alt="">
             </div>
             <!--Cuentos-->
-            <span class="title-sur" id="p-vue">Ilustración & Diagramación
-                <p class="sub-sur" id="p-enmarca"> Libro “Los cuentos están locos” - Año 2018</p>
-            </span>
+            <div class="experience-item">
+                <span class="title-sur" id="p-vue" data-section="freelance" data-value="book-title">Ilustración & Diagramación</span>
+                <p class="sub-sur" id="p-enmarca" data-section="freelance" data-value="book-description"> Libro “Los cuentos están locos” - Año 2018</p>
+            </div>
+            <!-- <span class="title-sur" id="p-vue" data-section="freelance" data-value="book-title">Ilustración & Diagramación
+                <p class="sub-sur" id="p-enmarca" data-section="freelance" data-value="book-description"> Libro “Los cuentos están locos” - Año 2018</p>
+            </span> -->
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Los cuentos están bien locos/Portada-tiro.png" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/2.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/3.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/4.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/Portada-tiro.png" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/2.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/3.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/4.jpeg" alt="">
             </div>
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Los cuentos están bien locos/5.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/6.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/7.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/8.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/5.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/6.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/7.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/8.jpeg" alt="">
             </div>
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Los cuentos están bien locos/9.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/11.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/12.jpeg" alt="">
-                <img src="./assets/img/Los cuentos están bien locos/10.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/9.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/11.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/12.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Los cuentos están bien locos/10.jpg" alt="">
             </div>
         </article>
         <!--Card section Acciona-->
         <article class="acciona">
-            <span class="section__subtitle">Acciona
-                <p class="cristalino_year">2018 - 2020</p>
-            </span>
+            <div class="experience-item">
+                <span class="section__subtitle" data-section="experience" data-value="fourth-job-title">Acciona</span>
+                <p class="cristalino_year" data-section="experience" data-value="fourth-job-date">2018 - 2020</p>
+            </div>
+           <!--  <span class="section__subtitle" data-section="experience" data-value="fourth-job-title">Acciona
+                <p class="cristalino_year" data-section="experience" data-value="fourth-job-date">2018 - 2020</p>
+            </span> -->
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Acciona/collage2.jpg" alt="">
-                <img src="./assets/img/Acciona/desierto.JPG" alt="">
-                <img src="./assets/img/Acciona/noche.jpg" alt="">
-                <img src="./assets/img/Acciona/quelat.jpg" alt="">
-                <img src="./assets/img/Acciona/rocks.jpg" alt="">
-                <img src="./assets/img/Acciona/Anshall Florit 5°B.jpeg" alt="">
-                <img src="./assets/img/Acciona/rocks2.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/collage2.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/desierto.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/noche.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/quelat.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/rocks.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/Anshall Florit 5°B.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/rocks2.jpg" alt="">
             </div>
             <div class="images-content-2" id="gallery-logos">
-                <img src="./assets/img/Acciona/collage.jpg" alt="">
-                <img src="./assets/img/Acciona/Sombras.jpeg" alt="">
-                <img src="./assets/img/Acciona/rocks3.jpg" alt="">
-                <img src="./assets/img/Acciona/queu.JPG" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/collage.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/Sombras.jpeg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/rocks3.jpg" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/queu.JPG" alt="">
             </div>
             <div class="images-content-3" id="gallery-logos">
-                <img src="./assets/img/Acciona/b2.png" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/b2.png" alt="">
             </div>
             <div class="images-content-3" id="gallery-logos">
-                <img src="./assets/img/Acciona/ma.png" alt="">
-                <img src="./assets/img/Acciona/ma-2.png" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/ma.png" alt="">
+                <img loading="lazy" src="./assets/img/Acciona/ma-2.png" alt="">
             </div>
         </article>
         <!--Card section Tedos-->
         <article class="tedos">
-            <span class="section__subtitle">TEDOS
-                <p class="cristalino_year">2014 - 2016</p>
-            </span>
+            <div class="experience-item">
+                <span class="section__subtitle" data-section="experience" data-value="last-job-title">TEDOS</span>
+                <p class="cristalino_year" data-section="experience" data-value="last-job-description">2014 - 2016</p>
+            </div>
+            <!-- <span class="section__subtitle" data-section="experience" data-value="last-job-title">TEDOS
+                <p class="cristalino_year" data-section="experience" data-value="last-job-description">2014 - 2016</p>
+            </span> -->
             <div class="images-content" id="gallery-logos-2">
-                <img src="./assets/img/Tedos/Telcolab.png" alt="">
-                <img src="./assets/img/Tedos/Mcheck.png" alt="">
-                <img src="./assets/img/Tedos/Mtrack.png" alt="">
-                <img src="./assets/img/Tedos/Msites.png" alt="">
-                <img src="./assets/img/Tedos/CloudyMachine.png" alt="">
-                <img src="./assets/img/Tedos/Mobile-ID.png" alt="">
-                <img src="./assets/img/Tedos/Mreader.png" alt="">
-                <img src="./assets/img/Tedos/Mproject.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Telcolab.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Mcheck.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Mtrack.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Msites.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/CloudyMachine.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Mobile-ID.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Mreader.png" alt="">
+                <img loading="lazy" src="./assets/img/Tedos/Mproject.png" alt="">
             </div>
         </article>
         <!-- Skills section-->
         <section class="skills section">
             <div class="section__container">
                 <div class="skill__buttons">
-                    <button class="btn design-btn active">Diseño Gráfico</button>
-                    <button class="btn code-btn">Diseño Web</button>
+                    <button class="btn design-btn active" data-section="skill" data-value="graphic-design">Diseño Gráfico</button>
+                    <button class="btn code-btn" data-section="skill" data-value="web-design">Diseño Web</button>
                 </div>
                 <div class="skill__container">
                     <div class="design-list show">
                         <ul class="design-list-items">
                             <li class="design-item">
-                                <img src="https://skillicons.dev/icons?i=figma"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=figma"/>
                                 <span>Figma</span>
                             </li>
                             <!-- <li class="design-item">
@@ -326,15 +403,19 @@
                                 <span>After Effect</span>
                             </li> -->
                             <li class="design-item">
-                                <img src="https://skillicons.dev/icons?i=ai"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=id"/>
+                                <span>Indesign</span>
+                            </li>
+                            <li class="design-item">
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=ai"/>
                                 <span>Illustrator</span>
                             </li>
                             <li class="design-item">
-                                <img src="https://skillicons.dev/icons?i=ps"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=ps"/>
                                 <span>Photoshop</span>
                             </li>
                             <li class="design-item">
-                                <img src="https://skillicons.dev/icons?i=pr"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=pr"/>
                                 <span>Adobe Premiere</span>
                             </li>
                         </ul>
@@ -342,51 +423,51 @@
                     <div class="code-list">
                         <ul class="code-list-items">
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=bootstrap"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=bootstrap"/>
                                 <span>Bootstrap</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=css"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=css"/>
                                 <span>CSS</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=github"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=github"/>
                                 <span>Github</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=html"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=html"/>
                                 <span>HTML</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=js"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=js"/>
                                 <span>JS</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=tailwind"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=tailwind"/>
                                 <span>Taiwind</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=vue"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=vue"/>
                                 <span>Vue</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=vuetify"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=vuetify"/>
                                 <span>Vuetify</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=wordpress"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=wordpress"/>
                                 <span>Wordpress</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=npm"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=npm"/>
                                 <span>Npm</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=nuxtjs"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=nuxtjs"/>
                                 <span>Nuxt Js</span>
                             </li>
                             <li class="code-item">
-                                <img src="https://skillicons.dev/icons?i=sass"/>
+                                <img loading="lazy" src="https://skillicons.dev/icons?i=sass"/>
                                 <span>Sass</span>
                             </li>
                         </ul>
@@ -396,7 +477,7 @@
         </section>
         
         <!--Skills section 2-->
-<!--         <section class="">
+        <!--<section class="">
             <div class="">
         <article class="skills-2">
             <span class="section__subtitle">Skills
@@ -436,27 +517,35 @@
     </main>
     <footer id="footer">
         <div class="footer-container">
-            <div class="h-center">
-                <a href="#"><i class="bx bxl-github"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-                <a href="#"><i class="bx bxl-behance behance"></i></a>
+            <div class="h-center-footer">
+                <a href="https://github.com/cinthimarce" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/ci-munoz-j/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.behance.net/CinthiaM" target="_blank"><i class="bx bxl-behance behance"></i></a>
             </div>
             <div class="info-footer">
                 <p class="h4-footer">Cinthia Muñoz Jaramillo </p>
-                <p class="subtext-footer">Diseñadora Gráfica & Web</p>
+                <p class="subtext-footer" data-section="footer" data-value="graphic-design">Diseñadora Gráfica & Web</p>
                 <p class="subtext-footer">+56 953614910</p>
             </div>
+            <!-- Visit Counter -->
+            <script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=cgamasm8bfaxj733zkg26xfx28fbccqy&down=async" async></script>
+            <noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=cgamasm8bfaxj733zkg26xfx28fbccqy" border="0" title="free web counter" alt="free web counter"></a></noscript>
+            <a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=cgamasm8bfaxj733zkg26xfx28fbccqy" border="0" title="free web counter" alt="free web counter"></a>
+            <br>
             <div class="info-img">
             </div>
         </div>
-        <div class="legal-footer1" id="footer">
+        <div class="legal-footer1">
             <p>&copy; 2025</p>
-            <div class="legal-footer2">
-            <span>Hecho con <span class="heart">♥</span> por Cinthia</span>
+            <div class="legal-footer2" id="footer-legal">
+                <span class="heart-mr" data-section="footer" data-value="made">Hecho con</span> 
+                    <i id="heart" data-section="icon" data-value="heart"></i> 
+                <span class="heart-ml" data-section="footer" data-value="by">por Cinthia</span>    
             </div>
         </div>
     </footer> 
     <script defer src="./assets/js/script.js"></script>
+    <!-- <script src="counter.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

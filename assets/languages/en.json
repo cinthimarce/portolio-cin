@@ -1,0 +1,69 @@
+{
+    "menu":{
+        "home": "Home",
+        "project": "Projects",
+        "contact": "Contact"
+    },
+    "icon": {
+        "home": "bx bx-home-alt",
+        "project": "bx bx-book-open",
+        "contact": "bx bx-envelope",
+        "download": "bx bx-down-arrow-alt",
+        "heart": "bx bxs-heart"
+    },
+    "welcome":{
+        "hi": "Hi, Welcome!",
+        "name": "I'm Cinthia"
+    },
+    "profile":{
+        "rol": "Graphic Designer",
+        "description": "I have experience creating visual content in both print and digital formats and I am passionate about Web Design, I use technologies such as HTML5, CSS3 and Tailwind.",
+        "download": "Download Resume"
+    },
+    "portfolio":{
+        "first-title": "Portfolio",
+        "first-description": "My Works"
+    },
+    "experience":{
+        "first-job-title": "Cristalino Company",
+        "filter-all": "All",
+        "filter-insurance": "Insurance",
+        "filter-youth": "Youth",
+        "second-job-title": "Homecenter Company",
+        "head-title": "Headboard Central Lighting",
+        "head-description":"Hallway Lighting Department, Nordic Style",
+        "head-title-2": "Headboard Central Lighting",
+        "head-description-2":"Hallway Lighting Department, Industrial Style",
+        "head-title-3": "Textile Exhibition",
+        "head-description-3":"Spring Textile Collection",
+        "head-title-4": "Textile Exhibition",
+        "head-description-4":"Textile Sheets Spring",
+        "head-title-5": "Textile Exhibition",
+        "head-description-5":"Children's Spring Textile Collection",
+        "third-job-title": "Freelance Work",
+        "third-job-description":"Logos",
+        "fourth-job-title": "Acciona Project",
+        "fourth-job-date":"2018 - 2020",
+        "last-job-title": "TEDOS Company",
+        "last-job-description":"2014 - 2016"
+    },
+    "diploma":{
+        "diploma-title": "Diploma in Interior Design at UAB",
+        "diploma-description": "Work Spaces Project - Year 2021"
+    },
+    "freelance":{
+        "vue-title": "Website Vue + Tailwind",
+        "vue-description": "Humberto Vera Framing - Year 2024",
+        "book-title": "Illustration and layout",
+        "book-description": "Book “The stories are crazy” - Year 2018"
+    },
+    "skill":{
+        "graphic-design": "Graphic Design",
+        "web-design": "Web Design"
+    },
+    "footer":{
+        "graphic-design": "Graphic and Web Designer",
+        "made": "Made with",
+        "by": "by Cinthia"
+    }
+}
